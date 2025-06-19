@@ -37,6 +37,7 @@ elizaos [command]
 | [`update`](./update.md)                 | Update ElizaOS CLI and project dependencies                                                                    |
 | [`test`](./test.md)                     | Run tests for Eliza agent projects and plugins                                                                 |
 | [`env`](./env.md)                       | Manage environment variables and secrets                                                                       |
+| [`logger`](./logger.md)                 | Configure logging settings with support for multiple transports and formats                                    |
 | [`dev`](./dev.md)                       | Start the project or plugin in development mode with auto-rebuild, detailed logging, and file change detection |
 | [`publish`](./publish.md)               | Publish a plugin to the registry                                                                               |
 | [`stop`](./stop.md)                     | Stop all running ElizaOS agents running locally                                                                |

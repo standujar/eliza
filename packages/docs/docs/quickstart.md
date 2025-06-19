@@ -216,6 +216,30 @@ If your agent fails to start on the first attempt:
 
 ---
 
+## Logger Configuration
+
+ElizaOS provides powerful logging capabilities that can be easily configured via CLI:
+
+```bash
+# Interactive logger configuration
+elizaos logger
+
+# Quick file logging setup
+elizaos logger --transport file --file ./logs/my-agent.log --level debug
+
+# CloudWatch integration for production
+elizaos logger --transport cloudwatch --level info --json
+```
+
+The logger supports multiple transports including:
+- **Console**: Pretty-printed colored output (default)
+- **File**: Local file logging with rotation
+- **CloudWatch**: AWS CloudWatch Logs integration
+- **Elasticsearch**: Advanced search and analytics
+- **Multi-transport**: Multiple destinations simultaneously
+
+For detailed configuration options, see the [Logger CLI Guide](./cli/logger.md).
+
 ## Next Steps
 
 Once you have your agent running, explore:
@@ -224,5 +248,6 @@ Once you have your agent running, explore:
 - [Add Custom Actions](./core/actions.md)
 - [Configure Knowledge](./core/knowledge.md)
 - [Add Services](./core/services.md)
+- [Configure Logging](./cli/logger.md)
 
 Join the [Discord community](https://discord.gg/elizaOS) for support and to share what you're building!

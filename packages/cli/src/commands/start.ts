@@ -778,6 +778,11 @@ export const start = new Command()
     }
     return n;
   })
+  .option('--log-level <level>', 'Set log level (trace, debug, info, warn, error, fatal)')
+  .option('--log-transport <type>', 'Set log transport (console, file, cloudwatch, elasticsearch)')
+  .option('--log-file <path>', 'Set log file path (for file transport)')
+  .option('--log-json', 'Enable JSON format logging')
+  .option('--no-log-pretty', 'Disable pretty printing for logs')
   .hook('preAction', async () => {
     await displayBanner();
   })

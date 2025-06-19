@@ -114,6 +114,11 @@ const sidebars: SidebarsConfig = {
           id: 'core/testing',
           label: 'Testing',
         },
+        {
+          type: 'doc',
+          id: 'core/logger',
+          label: 'Advanced Logger',
+        },
       ],
     },
     {
@@ -145,6 +150,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'cli/env',
           label: 'Environment',
+        },
+        {
+          type: 'doc',
+          id: 'cli/logger',
+          label: 'Logger',
         },
         // {
         //   type: 'doc',
